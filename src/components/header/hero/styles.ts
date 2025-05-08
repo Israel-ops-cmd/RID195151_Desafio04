@@ -12,11 +12,13 @@ export const Container = styled.div`
     @media (max-width: ${pxToRem(1024)}) {
         flex-direction: column;
         gap: ${pxToRem(20)};
+        margin: ${pxToRem(100)} auto ${pxToRem(20)} auto;
     }
 
     @media (max-width: ${pxToRem(768)}) {
         flex-direction: column;
         gap: ${pxToRem(20)};
+        margin: ${pxToRem(50)} auto;
     }
 `
 export const Text = styled.div`
@@ -83,6 +85,11 @@ export const Text = styled.div`
         margin: 0 ${pxToRem(50)};
         padding: 0;
 
+        h1 {
+            margin: 0 ${pxToRem(30)};
+            text-align: center;
+        }
+
         p{
             margin: 0 ${pxToRem(50)};
             padding: 0;
@@ -111,6 +118,10 @@ export const CodeImage = styled.div`
 
     @media (max-width: ${pxToRem(1024)}) {
         margin: ${pxToRem(50)} 0;
+    }
+
+    @media (max-width: ${pxToRem(769)}) {
+        margin: ${pxToRem(50)} 0 0 0;
     }
 `
 
