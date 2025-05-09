@@ -30,7 +30,7 @@ export const Text = styled.div`
     h1 {
         text-align: left;
         font-size: ${pxToRem(32)};
-        font-wight: 600;
+        font-weight: 600;
     }
     
     p {
