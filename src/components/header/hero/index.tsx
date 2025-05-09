@@ -3,11 +3,13 @@ import { Container, Text, CodeImage } from "./styles"
 
 const Hero: React.FC = () => {
     return (
-        <Container>
+        <Container id="tecnologias">
             <Text>
-                <h1>Lorem ipsum dolor sit amet</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                <button>Saber mais</button>
+                <h1>Israel Araújo</h1>
+                <p>Sou um desenvolvedor front-end especializado em transformar ideias em interfaces funcionais, acessíveis e com código de qualidade.</p>
+                <a href="#sobre">
+                    <button>Saber mais</button>
+                </a>
             </Text>
             <CodeImage>
                 <img src="/image.webp" alt="" />

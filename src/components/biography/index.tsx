@@ -3,7 +3,7 @@ import { Container, Title, TimelineImage, Items, Item, DescriptionItems, Descrip
 
 export const BiographySection = ({data}: BiographySectionProps) => {
     return (
-        <div>
+        <div id="sobre">
             <Title>Sobre mim</Title>
             <Container>
             <Items>
@@ -18,6 +18,7 @@ export const BiographySection = ({data}: BiographySectionProps) => {
         <DescriptionItems>
                 {data.map((item, index) => (
                     <DescriptionItem key={index}>
+                        <p className="mobile-year"><strong>{item.year}</strong></p>
                         <p>{item.description}</p>
                     </DescriptionItem>
                 ))}
