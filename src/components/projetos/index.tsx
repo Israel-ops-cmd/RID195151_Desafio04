@@ -5,7 +5,7 @@ import { SectionContainer } from './styles'
 
 export const Projects = () => {
     return (
-        <div>
+        <div id="projetos">
             <StyledH1>Projetos</StyledH1>
             <SectionContainer>
                 <ProjectCards

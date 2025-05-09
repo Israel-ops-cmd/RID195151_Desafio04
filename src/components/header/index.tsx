@@ -15,7 +15,7 @@ const Header: React.FC = () => {
                 <a href="https://github.com/Israel-ops-cmd" target="_blank">
                     <img src={githubIcon} alt="" />
                 </a>
-                <a href="https://github.com/Israel-ops-cmd" target="_blank">
+                <a href="https://www.linkedin.com/in/israelbrands/" target="_blank">
                     <img src={linkedinIcon} alt="" />
                 </a>
             </SocialIcons>

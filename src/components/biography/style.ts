@@ -1,4 +1,5 @@
-import styled from "styled-components";
+import styled from "styled-components"
+import { pxToRem } from "../../styles/Helpers";
 
 export const Container = styled.section`
   width: 70%;
@@ -8,14 +9,14 @@ export const Container = styled.section`
 `;
 
 export const Title = styled.h2`
-  font-size: 2rem;
-  margin-bottom: 2rem;
+  font-size: ${pxToRem(32)};
+  margin-bottom: ${pxToRem(32)};
   text-align: left;
-  margin-left: 200px;
+  margin-left: ${pxToRem(200)};
 
-  @media (max-width: 768px) {
+  @media (max-width: ${pxToRem(768)}) {
       text-align: center;
-      margin: 0 auto 20px auto;
+      margin: 0 auto ${pxToRem(20)} auto;
   }
 `;
 
@@ -26,12 +27,10 @@ export const TimelineImage = styled.img`
   display: block;
   padding: 0;
 
-  @media (max-width: 768px) {
+  @media (max-width: ${pxToRem(768)}) {
       display: none;
   }
 `;
-
-
 
 export const Items = styled.div`
   display: flex;
@@ -40,7 +39,7 @@ export const Items = styled.div`
   width: 100%;
   margin: 0 auto;
 
-  @media (max-width: 768px) {
+  @media (max-width: ${pxToRem(768)}) {
     display: none;
   }
 `;
@@ -55,7 +54,7 @@ export const Item = styled.div`
   }
 
   p:last-child {
-    font-size: 1rem;
+    font-size: ${pxToRem(16)};
   }
 `;
 
@@ -66,11 +65,21 @@ export const DescriptionItems = styled.div`
   width: 90%;
   margin: 0 auto;
 
-  @media (max-width: 768px) {
+  .mobile-year {
+    display: none;
+    font-weight: bold;
+    margin-bottom: ${pxToRem(8)};
+  }
+
+  @media (max-width: ${pxToRem(768)}) {
     flex-direction: column;
     width: 100%;
-    gap: 1rem;
+    gap: ${pxToRem(16)};
     align-items: center;
+
+    .mobile-year {
+      display: block;
+    }
   }
 `;
 
@@ -80,19 +89,19 @@ export const DescriptionItem = styled.div`
   width: 20%;
 
   p {
-    font-size: 16px;
+    font-size: ${pxToRem(16)};
     line-height: 1.4;
   }
 
-  @media (max-width: 1024px) {
+  @media (max-width: ${pxToRem(1024)}) {
       width: 50%;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: ${pxToRem(768)}) {
     width: 70%;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 12px;    /* borda leve */
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05); /* sombra leve */
+    padding: ${pxToRem(20)};
+    border: ${pxToRem(1)} solid #ddd;
+    border-radius: ${pxToRem(12)};
+    box-shadow: 0 ${pxToRem(2)} ${pxToRem(8)} rgba(0, 0, 0, 0.05); 
   }
 `;
