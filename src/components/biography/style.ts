@@ -10,13 +10,19 @@ export const Container = styled.section`
 
 export const Title = styled.h2`
   font-size: ${pxToRem(32)};
+  margin-top: ${pxToRem(60)};
   margin-bottom: ${pxToRem(32)};
   text-align: left;
   margin-left: ${pxToRem(200)};
 
+  @media (max-width: ${pxToRem(1024)}) {
+      text-align: center;
+      margin: ${pxToRem(60)} auto ${pxToRem(20)} auto;
+  }
+
   @media (max-width: ${pxToRem(768)}) {
       text-align: center;
-      margin: 0 auto ${pxToRem(20)} auto;
+      margin: ${pxToRem(60)} auto ${pxToRem(20)} auto;
   }
 `;
 
