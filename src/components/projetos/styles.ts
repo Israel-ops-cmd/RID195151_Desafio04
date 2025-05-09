@@ -19,9 +19,7 @@ export const SectionContainer = styled.section`
 `
 
 export const Container = styled.div`
-  background-color: #0f111a;
   padding: ${pxToRem(10)};
-  color: #fff;
   position: relative;
   overflow: hidden;
   border-radius: ${pxToRem(12)} 0 ${pxToRem(12)} 0;
