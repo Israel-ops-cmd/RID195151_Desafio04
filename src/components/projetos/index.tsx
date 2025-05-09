@@ -1,5 +1,7 @@
+import { StyledH1 } from "../../styles/GlobalStyle"
 import { ProjectCards } from "./projectCard"
-import { SectionContainer, StyledH1 } from './styles'
+import { SectionContainer } from './styles'
+
 
 export const Projects = () => {
     return (

@@ -1,22 +1,7 @@
 import styled from "styled-components"
 import { pxToRem } from "../../styles/Helpers"
 
-export const StyledH1 = styled.h1`
-  text-align: left;
-  font-size: ${pxToRem(32)};
-  font-weight: 600;
-  margin-left: ${pxToRem(200)};
 
-  @media (max-width: ${pxToRem(768)}) {
-    margin: 0;
-    text-align: center;
-  }
-
-  @media (max-width: ${pxToRem(1024)}) {
-    margin: 0;
-    text-align: center;
-  }
-`
 
 export const SectionContainer = styled.section`
   display: grid;
@@ -59,9 +44,9 @@ export const Container = styled.div`
 
   p {
     font-size: ${pxToRem(15.2)}; 
-    color: rgba(255, 255, 255, 0.7);
     margin-bottom: ${pxToRem(20)};
     text-align: left;
+    line-height: 20px;
   }
 
   a {
